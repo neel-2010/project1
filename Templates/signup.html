@@ -1,14 +1,12 @@
-
 <!doctype html>
 <html>
 <head><meta charset="UTF-8">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bookbuzz </title>
-<link rel="stylesheet" type=text/css href="/static/style.css">
+<title>sign up </title>
+<link rel="stylesheet" type=text/css href="/static/style2.css">
 </head>
 <body>
-
 <nav class="navbar navbar-expand-lg navbar-light" >
   <a class="navbar-brand" href="#">Bookbuzz</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,14 +15,14 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="{{url_for('index')}}">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('index')}}">Home </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Log in</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{url_for('signup')}}">Sign up</a>
+      <li class="nav-item active">
+        <a class="nav-link" href="{{url_for('signup')}}">Sign up<span class="sr-only">(current)</span></a>
       </li>
   </ul>
     <form  class="form-inline my-2 my-lg-0">
@@ -32,10 +30,29 @@
       <button class="btn btn-outline-success my-2 my-sm-0" style="color:black; border-color:black;"  type="submit">Search</button>
     </form>
   </div>
-</nav>
-<div class="quote">
-	<h1>Get your Favourite books from Bookbuzz</h1>
-	<h5>Reading is essential for those who seek to rise above the ordinary.</h5>
+</nav><br><br>
+<div class="body">
+<div class="container">
+
+   <div class="form-container">
+    <span><h1>Create Account</h1></span>
+  <form>
+<input type="username" placeholder="Username" name="firstname" required="required">
+<input type="email" placeholder="Email" name="email" required="required">
+<input type="password" placeholder="Password" name="password" required="required">
+<input type="password" placeholder="Confirm Password" name="confirmpassword" required="required">
+<button>Sign Up</button>
+  </form>
+ </div>
+<div class="side-container">
+    <div class= "logo">
+    </div>
+    <span><h1>Welcome Back!</h1></span>
+    <br>
+    <h3>Already have one</h3>
+    <button class="ghost">Log In</button>
+  </div>
+  </div>
 </div>
 </body>
 </html>

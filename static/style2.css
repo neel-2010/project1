@@ -1,0 +1,126 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    height: 100%
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(315deg, #726cf8 0%, #e975a8 74%);
+
+}
+.body{
+    display:flex;
+    flex-direction: column;
+    font-family:sans-serif;
+    justify-content: center;
+    align-items: center;
+    height:100hv;
+    width:100%;
+   
+}
+        
+    .container{
+    	background:#fff;
+        border-radius:10px;
+    	overflow: hidden;
+        position:relative;
+        width:750px;
+        max-width:100%;
+        min-height: 450px;
+        overflow:hidden;
+        -moz-box-shadow: 0 0 15px #323;
+-webkit-box-shadow: 0 0 15px #323;
+box-shadow: 0 0 15px #323;
+text-align: center;;
+display:flex;
+flex-wrap:wrap;
+padding: 0;
+
+
+        
+    }
+
+html {
+    background: #red; /* fallback color */
+    background: linear-gradient( to bottom, #red, #blue);
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+span{
+    font-weight:bold;
+    margin:10px;
+    font-size: 300;
+
+
+}
+
+a{
+    color:#333;
+    font-size: 14px;
+    text-decoration: :none;
+    
+
+}
+.form-container form{
+background:#fff;
+display:flex;
+flex-direction:column;
+align-items: :center;
+justify-content: :center;
+text-align: center;;
+height:100%;
+padding: 0 50px;
+}
+.form-container input{
+    background:#eee;
+    border:none;
+    padding:12px 15px;
+    margin:8px 0;
+    width:100%;
+}
+.body button{
+    border-radius: 20px;
+    border:1px solid #ff4b2b;
+    background:#ff4b2b;
+    color:#fff;
+    font-size:14px;
+    font-weight:bold;
+    padding:12px 45px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    margin:2px;
+
+}
+button:active{
+  transform:scale(0.95);
+}
+button:focus{
+    outline:none;
+}
+button.ghost{
+    background:transparent;
+    border-color:#fff;
+} 
+.container > div{
+    flex:50%;
+}
+.side-container{
+    background:linear-gradient( to right, #ff4b2b, #ff416c);
+    border:none;
+    padding:16% 15px;
+    margin:0 0;
+    width:100%;
+    justify-content: center;
+    align-items:center;
+    vertical-align: middle;
+    color:#fff;
+}
+input:focus{
+    -moz-box-shadow: 0 0 10px blue;
+-webkit-box-shadow: 0 0 10px blue;
+box-shadow: 0 0 10px #blue
+}

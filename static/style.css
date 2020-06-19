@@ -1,5 +1,39 @@
 body{
-	background-image: url("/static/background.jpg");
-    color: green;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-image:url("/static/untitled-1.jpg");
      }
+
+button:hover{
+	background-color: #565767;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+.quote{
+	position:absolute;
+	top:15%;
+	left:22%;
+	color:black;
+	border-radius:5%;
+	padding:5%;
+	font-style: arial;
+	border:black;
+	  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #000, 1px -1px 0 #fff, -1px 1px 0 #fff;
+	  text-align: :center;
+	}
+.sec
+{
+	background:url("/static/untitled-1.jpg");
+	width:100%;
+	height:70%;
+	margin-top: 0;
+	margin-left: 0;
+    
+}
+@media(max-width:1000px){
+	body{
+		background-image:linear-gradient(90deg, #cd9cf2 , #f6f3ff );
+		background-size: cover;
+		
+	}
+}
