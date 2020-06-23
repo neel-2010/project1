@@ -3,7 +3,7 @@
 <head><meta charset="UTF-8">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>sign up </title>
+<title>Login </title>
 <link rel="stylesheet" type=text/css href="/static/style2.css">
 </head>
 <body>
@@ -18,11 +18,11 @@
       <li class="nav-item">
         <a class="nav-link" href="{{url_for('index')}}">Home </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{url_for('login')}}">Log in</a>
-      </li>
       <li class="nav-item active">
-        <a class="nav-link" href="{{url_for('signup')}}">Sign up<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#{{url_for('login')}}">Log in<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('signup')}}">Sign up</a>
       </li>
   </ul>
     <form  class="form-inline my-2 my-lg-0">
@@ -33,26 +33,24 @@
 </nav><br><br>
 <div class="body">
 <div class="container">
-
-   <div class="form-container">
-    <span><h1>Create Account</h1></span>
-  <form action="{{url_for('login')}}" method="post">
-<input type="username" placeholder="Username" name="username" required="required">
-<input type="email" placeholder="Email" name="email" required="required">
-<input type="password" placeholder="Password" name="password" required="required">
-<input type="password" placeholder="Confirm Password" name="confirmpassword" required="required">
-<button>Sign Up</button>
-  </form>
- </div>
 <div class="side-container">
     <div class= "logo">
     </div>
-    <span><h1>Welcome Back!</h1></span>
+    <span><h1>Welcome to Bookbuzz!</h1></span>
     <br>
-    <h3>Already have one</h3>
-    <form action="{{url_for('login')}}" method="get">
-    <button class="ghost">log In</button></form>
+    <h3>Enter your personal detail and get started with us. </h3>
+    <form action="{{url_for('signup')}}" method="get">
+    <button class="ghost">sign up</button></form>
   </div>
+   <div class="form-container">
+    <span><h1 class="new1">Log In</h1></span>
+  <form action="{{url_for('login')}}" method="post" style="margin-top: 20px;">
+<input type="email" placeholder="Email" name="email" required="required">
+<input type="password" placeholder="Password" name="password" required="required">
+<button>log in</button>
+  </form>
+ </div>
+
   </div>
 </div>
 </body>

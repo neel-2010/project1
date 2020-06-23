@@ -58,13 +58,7 @@ span{
 
 }
 
-a{
-    color:#333;
-    font-size: 14px;
-    text-decoration: :none;
-    
 
-}
 .form-container form{
 background:#fff;
 display:flex;
@@ -91,7 +85,7 @@ padding: 0 50px;
     font-weight:bold;
     padding:12px 45px;
     text-transform: uppercase;
-    transition: transform 80ms ease-in;
+    transition: transform 80ms ease-in-out;
     margin:2px;
 
 }
@@ -100,6 +94,9 @@ button:active{
 }
 button:focus{
     outline:none;
+    color:#fff;
+    text-decoration: none;
+
 }
 button.ghost{
     background:transparent;
@@ -112,7 +109,7 @@ button.ghost{
     background:linear-gradient( to right, #ff4b2b, #ff416c);
     border:none;
     padding:16% 15px;
-    margin:0 0;
+    margin:0;
     width:100%;
     justify-content: center;
     align-items:center;
@@ -124,3 +121,18 @@ input:focus{
 -webkit-box-shadow: 0 0 10px blue;
 box-shadow: 0 0 10px #blue
 }
+@media(max-width:476px){
+    .side-container{
+        margin-top:20px;
+    }
+}
+.new1{
+    margin-top:60px;
+    letter-spacing: 1px;
+
+}
+a{
+    color:#fff;
+    text-decoration: none;
+}
+
